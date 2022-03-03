@@ -2,17 +2,25 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: black;
+    position: sticky;
+    top: 0px;
+    width: 100%;
 }
 header h1{
     color: white;
     font-size: 80px;
     margin-left: 20px;
+}
+.li1{
+    position: absolute;
+    right: 0px;
 }
 header li{
     display: inline;
@@ -46,6 +54,9 @@ section h2{
 }
 section p{
     text-align: justify;
+    height: 200px;
+    overflow: scroll;
+  
 }
 aside{
   flex:1;
@@ -95,4 +106,10 @@ footer p{
         border-bottom: 1px solid lightgray;
     }
 }
-
+.up{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    padding: 50px;
+    border-radius: 200px;
+}
